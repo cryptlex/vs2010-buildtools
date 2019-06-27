@@ -20,9 +20,6 @@ RUN REG ADD 'HKLM\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v7.0A' /f /v Install
 # Needed for resource files
 RUN powershell -Command choco install -y windows-sdk-8.0
 
-# Start developer command prompt with any other commands specified.
-ENTRYPOINT 'C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd' /Release /x64 &&
-
 
 
 
